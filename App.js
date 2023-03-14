@@ -1,12 +1,12 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
-import ProductsScreen from "./src/Screens/ProductsScreen.js";
+import ProductsDetailsScreen from "./src/Screens/ProductsDetailsScreen";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ProductsScreen />
-
+      {/* <ProductsScreen /> */}
+      <ProductsDetailsScreen />
       <StatusBar style="auto" />
     </View>
   );
@@ -16,7 +16,5 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
