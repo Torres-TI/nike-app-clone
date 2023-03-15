@@ -11,7 +11,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { cartSlice } from "../store/cartSlice";
 
-const ProductsDetailsScreen = (navigation) => {
+const ProductsDetailsScreen = ({ navigation }) => {
   const product = useSelector((state) => state.products.selectedProduct);
   const dispatch = useDispatch();
   const { width } = useWindowDimensions();
@@ -37,7 +37,13 @@ const ProductsDetailsScreen = (navigation) => {
           <Text style={styles.description}>{product.description}</Text>
         </View>
       </ScrollView>
-      <Pressable style={styles.button} onPress={addToCart}>
+      <Pressable
+        style={styles.button}
+        onPress={() => {
+          addToCart();
+          navigation.goBack();
+        }}
+      >
         <Text style={styles.buttonText}>Add to cart</Text>
       </Pressable>
 
