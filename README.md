@@ -29,7 +29,7 @@ Fique à vontade para explorar o código-fonte e aprender com as implementaçõe
 
 `npx expo start`
 
-## Application UI
+## Interfaces
 <p align="center" inline-block>
 
 <img src="https://user-images.githubusercontent.com/76910959/225210030-43edf967-634e-485b-938f-695f77f00569.png"  alt="Imagem 1" width="200" style="display: inline-block margin-left: 20px;"/>
